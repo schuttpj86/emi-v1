@@ -1,0 +1,32 @@
+{
+  "name": "Example 3.4 - 400kV Double Circuit Vertical",
+  "system_parameters": {
+    "frequency": 50,
+    "earth_resistivity": 20
+  },
+  "conductor_types": {
+    "phase_4x400_acsr": {
+      "gmr_impedance": 0.21275,
+      "gmr_potential": 0.224267,
+      "r_ac": 0.0171
+    },
+    "earth_1x400_acsr": {
+      "gmr_impedance": 0.00791,
+      "gmr_potential": 0.009765,
+      "r_ac": 0.0643
+    }
+  },
+  "circuits": [
+    { "id": "C1", "name": "Circuit 1 (Left)" },
+    { "id": "C2", "name": "Circuit 2 (Right)" }
+  ],
+  "tower_geometry": [
+    { "conductor_id": "1 (C1, Top)", "x": -6.93, "y": 32.26, "type": "phase_4x400_acsr", "circuit_id": "C1", "phase": "A"},
+    { "conductor_id": "2 (C1, Mid)", "x": -10.16,"y": 21.79, "type": "phase_4x400_acsr", "circuit_id": "C1", "phase": "B"},
+    { "conductor_id": "3 (C1, Bot)", "x": -8.33, "y": 12.95, "type": "phase_4x400_acsr", "circuit_id": "C1", "phase": "C"},
+    { "conductor_id": "4 (C2, Top)", "x":  6.93, "y": 32.26, "type": "phase_4x400_acsr", "circuit_id": "C2", "phase": "A"},
+    { "conductor_id": "5 (C2, Mid)", "x":  10.16,"y": 21.79, "type": "phase_4x400_acsr", "circuit_id": "C2", "phase": "B"},
+    { "conductor_id": "6 (C2, Bot)", "x":  8.33, "y": 12.95, "type": "phase_4x400_acsr", "circuit_id": "C2", "phase": "C"},
+    { "conductor_id": "7 (Earth)",   "x":  0.0,  "y": 43.09, "type": "earth_1x400_acsr", "circuit_id": null, "phase": null}
+  ]
+}

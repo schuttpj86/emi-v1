@@ -1,0 +1,33 @@
+{
+  "name": "L23 Double Circuit Tower",
+  "system_parameters": {
+    "frequency": 50,
+    "earth_resistivity": 20
+  },
+  "conductor_types": {
+    "phase_conductor_acsr": {
+      "gmr": 0.0492,
+      "radius": 0.0541,
+      "r_ac": 0.0793
+    },
+    "earth_wire_acsr": {
+      "gmr": 0.00807,
+      "radius": 0.00977,
+      "r_ac": 0.1489
+    }
+  },
+  "circuits": [
+    { "id": "C1", "name": "Circuit 1" },
+    { "id": "C2", "name": "Circuit 2" }
+  ],
+  "tower_geometry": [
+    { "x": -16.5, "y": 35.0, "type": "earth_wire_acsr", "conductor_id": "B1", "circuit_id": null, "phase": null},
+    { "x":  16.5, "y": 35.0, "type": "earth_wire_acsr", "conductor_id": "B2", "circuit_id": null, "phase": null},
+    { "x": -12.5, "y": 35.0, "type": "phase_conductor_acsr", "conductor_id": "F4_L", "circuit_id": "C2", "phase": "A"},
+    { "x":  12.5, "y": 35.0, "type": "phase_conductor_acsr", "conductor_id": "F4_R", "circuit_id": "C2", "phase": "A"},
+    { "x": -15.8, "y": 23.5, "type": "phase_conductor_acsr", "conductor_id": "F8_L", "circuit_id": "C1", "phase": "B"},
+    { "x":  15.8, "y": 23.5, "type": "phase_conductor_acsr", "conductor_id": "F8_R", "circuit_id": "C1", "phase": "B"},
+    { "x":  -9.3, "y": 23.5, "type": "phase_conductor_acsr", "conductor_id": "F12_L", "circuit_id": "C1", "phase": "C"},
+    { "x":   9.3, "y": 23.5, "type": "phase_conductor_acsr", "conductor_id": "F12_R", "circuit_id": "C1", "phase": "C"}
+  ]
+}
