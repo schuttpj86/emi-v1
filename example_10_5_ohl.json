@@ -1,0 +1,53 @@
+{
+  "name": "Example 10.5 - Single Circuit OHL",
+  "system_parameters": {
+    "frequency": 50,
+    "earth_resistivity": 100
+  },
+  "conductor_types": {
+    "phase_4x400_acsr": {
+      "gmr_impedance": 0.21275,
+      "gmr_potential": 0.224267,
+      "r_ac": 0.0171
+    },
+    "earth_1x400_acsr": {
+      "gmr_impedance": 0.00791,
+      "gmr_potential": 0.009765,
+      "r_ac": 0.0643
+    }
+  },
+  "tower_geometry": [
+    {
+      "conductor_id": "R",
+      "type": "phase_4x400_acsr",
+      "x": -8.33,
+      "y": 12.95,
+      "circuit_id": "C1",
+      "phase": "R"
+    },
+    {
+      "conductor_id": "Y", 
+      "type": "phase_4x400_acsr",
+      "x": -10.16,
+      "y": 21.79,
+      "circuit_id": "C1",
+      "phase": "Y"
+    },
+    {
+      "conductor_id": "B",
+      "type": "phase_4x400_acsr", 
+      "x": -6.93,
+      "y": 32.26,
+      "circuit_id": "C1",
+      "phase": "B"
+    },
+    {
+      "conductor_id": "E",
+      "type": "earth_1x400_acsr",
+      "x": 0.0,
+      "y": 43.09,
+      "circuit_id": null,
+      "phase": null
+    }
+  ]
+}

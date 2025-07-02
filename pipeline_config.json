@@ -1,0 +1,19 @@
+{
+  "name": "Standard Steel Pipeline",
+  "physical_properties": {
+    "outer_diameter_m": 0.5,
+    "steel_thickness_m": 0.01,
+    "steel_rel_permeability": 300,
+    "steel_resistivity_ohmm": 1.8e-7
+  },
+  "coating_properties": {
+    "type": "FBE",
+    "thickness_m": 5e-4,
+    "resistivity_ohmm": 1e12,
+    "rel_permittivity": 4.0
+  },
+  "position": {
+    "x_separation_m": 50,
+    "burial_depth_m": 1.5
+  }
+}

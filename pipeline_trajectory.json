@@ -1,0 +1,8 @@
+{
+  "name": "Pipeline Route with Bend",
+  "coordinates_m": [
+    [50, 0, -1.5],
+    [50, 1000, -1.5],
+    [250, 1500, -1.5]
+  ]
+}

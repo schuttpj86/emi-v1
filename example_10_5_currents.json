@@ -1,0 +1,17 @@
+{
+  "description": "Example 10.5 operating currents and fault current",
+  "steady_state": {
+    "C1": {
+      "R": "2000+0j",
+      "Y": "-1000-1732j",
+      "B": "-1000+1732j"
+    }
+  },
+  "fault_conditions": {
+    "single_phase_ground_fault": {
+      "faulted_phase": "R",
+      "fault_current": "13000+0j",
+      "fault_type": "single_phase_ground"
+    }
+  }
+}

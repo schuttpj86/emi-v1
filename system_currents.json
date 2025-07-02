@@ -1,0 +1,13 @@
+{
+  "description": "Steady-state operating currents in Amps (complex numbers)",
+  "C1": {
+    "A": "500+0j",
+    "B": "-250-433j",
+    "C": "-250+433j"
+  },
+  "C2": {
+    "A": "500+0j",
+    "B": "-250-433j",
+    "C": "-250+433j"
+  }
+}
